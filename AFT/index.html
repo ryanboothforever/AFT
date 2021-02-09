@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-
- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/7ac6268f78.js" crossorigin="anonymous"></script>
 <link href="css/style.css" rel="stylesheet">
@@ -11,14 +11,15 @@
   <div class="background-container">
   <header>
     <img src="header.jpg" alt="Almost FREE Trucks logo">
+    
     <nav class="nav-bar" id="myNavBar">
-      <ul>
+    
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#inventory">Inventory</a>
         <a href="#contact">Contact</a>
-      </ul>
-      <i class="fas fa-bars" id="hamburger"></i>
+        <a href="javascript:void(0);" class="icon" onclick="toHamburger()"><i class="fas fa-bars"></i>  </a>  
+      
     </nav>
   </header>
   <section class="about" id="about">
@@ -31,22 +32,23 @@
 <section class="inventory" id="inventory">
 	<h2>Inventory</h2>
 	<section class="container">
-    <p>Our inventory consists of sleeper semi tractors, day cabs, and dry van trailers. They come to us as returned leased trucks, retired mail trucks and trailers, accident-damaged units, and trades. We add new inventory weekly, so check back often! Some makes we have had:</p>
+    <p>Our inventory consists of several different makes and models of sleeper semi tractors, day cabs, and dry van trailers. They come to us as returned leased trucks, retired mail trucks and trailers, accident-damaged units, and trades. <br>You can find a variety of new and used truck parts at Almost FREE Truck Parts. We add new inventory weekly, so check back often! </p>
     <section class="inventory-list">
       <section class="list-container truck-list">
         <section class="nice">
-        <h3><a href="https://showroom.auction123.com/almost_free_trucks/index.html?leadsource=Showroom|almost_free_trucks" target="_blank">Commercial Trucks</a></h3>
+        <h3 class="inventory-header"><a href="https://showroom.auction123.com/almost_free_trucks/index.html?leadsource=Showroom|almost_free_trucks" target="_blank">Commercial Trucks</a></h3>
         <ul class="make-list">
-              <li><a href="https://showroom.auction123.com/almost_free_trucks/index.html?make=International&leadsource=Showroom|almost_free_trucks" target="_blank">International</a></li>
+          <li><a href="https://showroom.auction123.com/almost_free_trucks/index.html?make=International&leadsource=Showroom|almost_free_trucks" target="_blank">International</a></li>
           <li><a href="https://showroom.auction123.com/almost_free_trucks/index.html?make=Freightliner&leadsource=Showroom|almost_free_trucks" target="_blank">Freightliner</a></li>
           <li><a href="https://showroom.auction123.com/almost_free_trucks/index.html?make=Volvo&leadsource=Showroom|almost_free_trucks" target="_blank">Volvo</a></li>
           <li>Peterbilt</li>
           <li><a href="https://showroom.auction123.com/almost_free_trucks/index.html?make=Kenworth&leadsource=Showroom|almost_free_trucks" target="_blank">Kenworth</a></li>
         </ul>
+        </section>
       </section>
-      </section>
+      
       <section class="list-container trailer-list">
-        <h3><a href="https://showroom.auction123.com/almost_free_trucks/index.html?type=Trailers&leadsource=Showroom|almost_free_trucks">Trailers</a></h3>
+        <h3 class="inventory-header"><a href="https://showroom.auction123.com/almost_free_trucks/index.html?type=Trailers&leadsource=Showroom|almost_free_trucks">Trailers</a></h3>
         <ul class="make-list">
           <li><a href="https://showroom.auction123.com/almost_free_trucks/index.html?make=Great+Dane&leadsource=Showroom|almost_free_trucks">Great Dane</a></li>
           <li>Wabash</li>
@@ -56,7 +58,19 @@
         </ul>
       </section>
     </section>
-    <h3 id="go-inventory"><a href="https://showroom.auction123.com/almost_free_trucks" target="_blank">View Inventory</a></h3>
+
+    <section class="list-container parts-list">
+      <h3 class="inventory-header"><a href="https://www.ebay.com/sch/almostfreetruckparts/m.html?_nkw=&_armrs=1&_ipg=&_from=">Parts</a></h3>
+      <ul class="make-list">
+        <li>Cummins</li>
+        <li>Detroit</li>
+        <li>Eaton</li>
+        <li>Paccar</li>
+        <li>Volvo</li>
+      </ul>
+    </section>
+  </section>
+    <h3 id="go-inventory"><a href="https://showroom.auction123.com/almost_free_trucks" target="_blank">VIEW INVENTORY</a></h3>
     </section>
   </section>
 <section class="contact" id="contact">
@@ -66,16 +80,18 @@
 <form>      
   <input name="name" type="text" class="feedback-input" placeholder="Name" />   
   <input name="email" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+  <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
   <input type="submit" value="SUBMIT"/>
 </form>
-      </div>
+</section>
+</div>
 
 <footer>
 
-<i class="fas fa-envelope-open-text"></i>
-<address>Almost Free Trucks | 200 Owen Parkway Circle | Carter Lake, IA 51510</address>
-<i class="fas fa-phone"></i>
+<address></address><i class="fas fa-envelope-open-text"></i>
+<span>Almost Free Trucks | 200 Owen Parkway Circle | Carter Lake, IA 51510</span></address>
+<br>
+<phone><i class="fas fa-phone"></i></phone>
 <a href="tel: 866-340-0889">866-340-0889</a>
 <h4>&#169; 2021 Almost Free Trucks</h4>
 </footer>
