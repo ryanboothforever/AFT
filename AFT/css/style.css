@@ -235,6 +235,13 @@ li:visited {
   color: rgba(168, 43, 46,1);
 }
 
+.inventory-header a:visited {
+  color: rgba(168, 43, 46,1)
+}
+.inventory-header a:hover{
+  color: white;
+}
+
 h2{
   text-align: center;
   padding: 2%;
@@ -276,6 +283,29 @@ h2{
 /*Media Queries*/
 
 
+
+
+
+
+@media all and (max-width: 1070px){
+  #go-inventory {
+    font-size: 1.3rem;
+    width: 50%;
+  }
+  .inventory h3{
+    font-size: 1.2rem;
+    }
+  li{
+    font-size: 1.2rem;
+  }
+  .list-container{
+    height: 450px;
+  }
+  .inventory{
+    height: 810px;
+  }
+}
+
 @media all and (max-width:600px){
   .nav-bar a:not(:first-child){display: none;}
   .nav-bar a.icon{
@@ -316,41 +346,39 @@ h2{
     margin-top: 2%;
     margin-bottom: 2%;
   }
+  .inventory h3{
+    font-size: 1.7rem;
+    padding: 0;
+  }
   .list-container{
     float: none;
     width: auto;
-    height: 350px;
+    height: 400px;
     padding-top: 2%;
+    margin-top: 3%;
   }
   #inventory{
-    height: 1900px;
+    height: 1720px;
   }
 
   li{
     font-size: 1.5rem;
   }
-}
 
-
-
-@media all and (max-width: 1070px){
-  #go-inventory {
+  #go-inventory{
     font-size: 1.3rem;
-    width: 50%;
-  }
-  .inventory h3{
-    font-size: 1.5rem;
-    }
-  li{
-    font-size: 1.2rem;
-  }
-  .list-container{
-    height: 450px;
-  }
-  .inventory{
-    height: 810px;
+    width: 100%;
+    margin-top: 2%;
   }
 }
+
+@media all and (max-width:390px){
+  #inventory{
+    height: 1760px;
+  }
+
+}
+
 
 .contact{
 	clear: both;
@@ -360,12 +388,12 @@ h2{
 form { max-width:420px; margin:50px auto; }
 
 .feedback-input {
-  color:white;
+  color:black;
   font-family: Helvetica, Arial, sans-serif;
   
   font-size: 18px;
   line-height: 22px;
-  background-color: transparent;
+  background-color: #ededed;
   border:2px solid rgba(168, 43, 46,1);
   transition: all 0.3s;
   padding: 13px;
@@ -395,7 +423,6 @@ textarea {
   padding: 14px 16px;
   transition: all 0.3s;
   margin-top:-4px;
- 
 }
 [type="submit"]:hover { background:black; }
 
@@ -408,6 +435,6 @@ footer{
   padding: 3%;
 }
 
-span, phone{
-  margin: 1%;
+phone a{
+  color: white;
 }
