@@ -19,7 +19,7 @@
         <a href="#about">About</a>
         <a href="#inventory">Inventory</a>
         <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="toHamburger()"><i class="fas fa-bars"></i>  </a>  
+        <a href="javascript:void(0);" class="icon" aria-label="Menu" onclick="toHamburger()"><i class="fas fa-bars"></i>  </a>  
       
     </nav>
   </header>
@@ -37,7 +37,7 @@
     <section class="inventory-list">
       <section class="list-container truck-list">
         <section class="nice">
-        <h3 class="inventory-header"><a href="https://showroom.auction123.com/almost_free_trucks/index.html?type=Commercial%20Trucks&from_ebay=true&leadsource=Showroom|almost_free_trucks" target="_blank">Commercial Trucks</a></h3>
+        <a href="https://showroom.auction123.com/almost_free_trucks/index.html?type=Commercial%20Trucks&from_ebay=true&leadsource=Showroom|almost_free_trucks" target="_blank"><h3 class="inventory-header">Commercial Trucks</h3></a>
         <ul class="make-list">
           <li>International</li>
           <li>Freightliner</li>
@@ -49,7 +49,7 @@
       </section>
       
       <section class="list-container trailer-list">
-        <h3 class="inventory-header"><a href="https://showroom.auction123.com/almost_free_trucks/index.html?type=Trailers&from_ebay=true&leadsource=Showroom|almost_free_trucks" target="_blank">Trailers</a></h3>
+        <a href="https://showroom.auction123.com/almost_free_trucks/index.html?type=Trailers&from_ebay=true&leadsource=Showroom|almost_free_trucks" target="_blank"><h3 class="inventory-header">Trailers</h3></a>
         <ul class="make-list">
           <li>Great Dane</li>
           <li>Wabash</li>
@@ -61,7 +61,7 @@
     </section>
 
     <section class="list-container parts-list">
-      <h3 class="inventory-header"><a href="https://www.ebay.com/str/almostfreetruckparts" target="_blank">Parts</a></h3>
+      <a href="https://www.ebay.com/str/almostfreetruckparts" target="_blank"><h3 class="inventory-header">Parts</h3></a>
       <ul class="make-list">
         <li>Cummins</li>
         <li>Detroit</li>
@@ -71,17 +71,20 @@
       </ul>
     </section>
   </section>
-    <h3 id="go-inventory"><a href="https://www.ebay.com/str/almostfreetrucks" target="_blank">VIEW INVENTORY</a></h3>
+    <a href="https://www.ebay.com/str/almostfreetrucks" target="_blank"><h3 id="go-inventory">VIEW INVENTORY</h3></a>
     </section>
   </section>
 <section class="contact" id="contact">
 	
     <h2>Contact Us</h2>
     <p>The best way to contact us is via <a href="mailto: info@almostfreetrucks.com">email</a> or the contact form below.</p>
-<form>      
-  <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-  <input name="email" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+<form>  
+  <label for="name">Name:</label>    
+  <input name="name" type="text" class="feedback-input name" placeholder="Name" label="Name"/>
+  <label for="email">Email:</label>   
+  <input name="email" type="text" class="feedback-input email" placeholder="Email" label="Email"/>
+  <label for="message">Message:</label>
+  <textarea name="text" class="feedback-input message" placeholder="Message" label="Message"></textarea>
   <input type="submit" value="SUBMIT"/>
 </form>
 </section>
